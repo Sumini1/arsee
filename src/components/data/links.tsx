@@ -27,7 +27,7 @@ export const socialLinks: LinkItem[] = [
   {
     id: "shopee",
     title: "Shopee",
-    url: "https://shopee.co.id/namatoko",
+    url: "https://shopee.co.id/#",
     icon: <SiShopee className="w-5 h-5" />,
     description: "Shop on Shopee",
     isExternal: true,
