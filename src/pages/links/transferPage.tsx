@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { FaArrowLeft, FaCopy, FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 import { MdAccountBalance } from "react-icons/md";
 
@@ -16,8 +18,8 @@ const bankAccounts: BankAccount[] = [
     accountNumber: "7233399684",
     accountName: "Arij Hanun Athaya",
     color: "from-blue-500 to-blue-600",
-  }
- 
+    // Optional: logo: "/images/bsi.png"
+  },
 ];
 
 export default function TransferPage() {
@@ -45,13 +47,13 @@ export default function TransferPage() {
       {/* Header */}
       <header className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-pink-100 z-10">
         <div className="max-w-md mx-auto px-4 py-4">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 text-pink-600 hover:text-pink-700 font-medium transition-colors"
           >
             <FaArrowLeft className="w-4 h-4" />
             Kembali ke Beranda
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -72,9 +74,9 @@ export default function TransferPage() {
 
         {/* Bank Accounts */}
         <div className="space-y-4 mb-8">
-          {bankAccounts.map((account, index) => (
+          {bankAccounts.map((account) => (
             <div
-              key={index}
+              key={account.accountNumber}
               className="bg-white rounded-2xl shadow-lg border border-pink-100 overflow-hidden hover:shadow-xl transition-shadow"
             >
               <div className={`bg-gradient-to-r ${account.color} p-4`}>
@@ -125,11 +127,11 @@ export default function TransferPage() {
           <h3 className="font-semibold text-blue-800 mb-2">
             📋 Cara Transfer:
           </h3>
-          <ol className="text-sm text-blue-700 space-y-1">
-            <li>1. Pilih salah satu rekening di atas</li>
-            <li>2. Transfer sesuai nominal yang diminta</li>
-            <li>3. Simpan bukti transfer</li>
-            <li>4. Kirim bukti ke Admin WhatsApp</li>
+          <ol className="text-sm text-blue-700 space-y-1 list-decimal list-inside">
+            <li>Pilih salah satu rekening di atas</li>
+            <li>Transfer sesuai nominal yang diminta</li>
+            <li>Simpan bukti transfer</li>
+            <li>Kirim bukti ke Admin WhatsApp</li>
           </ol>
         </div>
 
