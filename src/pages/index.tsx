@@ -207,7 +207,7 @@ export default function Home() {
             {/* Footer */}
             <div className="text-center mt-8 pt-6 border-t border-gray-200">
               <p className="text-xs text-gray-500">
-                © 2024 arseé.id - All rights reserved
+                © 2025 arseé.id - All rights reserved
               </p>
             </div>
           </div>
