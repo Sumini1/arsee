@@ -211,7 +211,7 @@ export default function QRISPage() {
             >
               ×
             </button>
-            <img
+            <Image
               src="/qris.jpeg"
               alt="QRIS Fullscreen"
               className="w-full rounded-lg shadow-2xl"
