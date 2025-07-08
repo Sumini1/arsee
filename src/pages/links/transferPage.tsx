@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { FaArrowLeft, FaCopy, FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 import { MdAccountBalance } from "react-icons/md";
 
