@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { useState } from "react";
+
 
 export default function QRISPage() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -128,7 +130,7 @@ export default function QRISPage() {
               )}
 
               {/* QR Code Image */}
-              <img
+              <Image
                 src="/qris.jpeg"
                 alt="QRIS Arseé Payment"
                 className={`w-full rounded-lg shadow-md transition-all duration-300 cursor-pointer hover:shadow-lg ${
