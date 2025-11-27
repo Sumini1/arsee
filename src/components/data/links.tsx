@@ -43,14 +43,14 @@ export const contactLinks: LinkItem[] = [
     description: "Chat with Admin 1",
     isExternal: true,
   },
-  {
-    id: "admin2",
-    title: "Admin 2",
-    url: "https://wa.me/6285719329232?text=Halo%20Admin%202,%20saya%20ingin%20bertanya",
-    icon: <FaWhatsapp className="w-5 h-5" />,
-    description: "Chat with Admin 2",
-    isExternal: true,
-  },
+  // {
+  //   id: "admin2",
+  //   title: "Admin 2",
+  //   url: "https://wa.me/6285719329232?text=Halo%20Admin%202,%20saya%20ingin%20bertanya",
+  //   icon: <FaWhatsapp className="w-5 h-5" />,
+  //   description: "Chat with Admin 2",
+  //   isExternal: true,
+  // },
 ];
 
 export const paymentLinks: LinkItem[] = [
